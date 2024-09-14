@@ -8,12 +8,10 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
     <div class="container mx-auto px-4 py-8">
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-indigo-700">My Webpage</h1>
-            <p class="text-xl text-gray-600 mt-2">A modern webpage hosted on GitHub Pages</p>
-        </header>
-
-        <main>
+        <main class="flex flex-col items-center">
+            <button id="contactButton" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 mb-4">
+                문의하기
+            </button>
             <button id="privacyButton" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
                 개인정보 처리방침
             </button>
@@ -81,6 +79,10 @@
         document.getElementById('privacyButton').addEventListener('click', function() {
             var content = document.getElementById('privacyContent');
             content.classList.toggle('hidden');
+        });
+
+        document.getElementById('contactButton').addEventListener('click', function() {
+            window.location.href = "mailto:wanttobeappledev@gmail.com";
         });
     </script>
 </body>

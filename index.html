@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보 처리방침</title>
+    <title>IP36 고객지원 페이지</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        custom: 'rgb(176, 184, 192)',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
     <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-700">IP36 고객지원 페이지</h1>
+        </header>
         <main class="flex flex-col items-center">
-            <button id="contactButton" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 mb-4">
-                문의하기
-            </button>
-            <button id="privacyButton" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
-                개인정보 처리방침
-            </button>
+            <div class="space-y-4 w-full max-w-md">
+                <button id="contactButton" class="w-full bg-custom hover:bg-custom/80 text-white font-bold py-3 px-6 rounded-xl transition duration-300 ease-in-out transform hover:scale-105">
+                    문의하기
+                </button>
+                <button id="privacyButton" class="w-full bg-custom hover:bg-custom/80 text-white font-bold py-3 px-6 rounded-xl transition duration-300 ease-in-out transform hover:scale-105">
+                    개인정보 처리방침
+                </button>
+            </div>
 
-            <div id="privacyContent" class="mt-8 bg-white shadow-lg rounded-lg p-6 hidden">
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-4">개인정보 처리방침</h2>
+            <div id="privacyContent" class="mt-8 bg-white shadow-lg rounded-lg p-6 hidden w-full max-w-2xl">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">개인정보 처리방침</h2>
                 <div class="space-y-4 text-gray-700">
                     <p>IP36 어플리케이션은 개인정보보호법에 따라 이용자들의 개인정보 보호 및 권익을 보호하고자 다음과 같은 처리방침을 두고 있습니다.</p>
                     <p>당사는 개인정보처리방침을 개정하는 경우 앱 화면 및 웹사이트 공지사항을 통하여 공지할 것입니다.</p>
@@ -70,7 +86,7 @@
 
                     <h3 class="text-xl font-semibold text-indigo-600 mt-6">9. 개인정보 보호책임자 작성</h3>
                     <p>- 이메일 : wanttobeappledev@gmail.com</p>
-                </div>
+                  </div>
             </div>
         </main>
     </div>
